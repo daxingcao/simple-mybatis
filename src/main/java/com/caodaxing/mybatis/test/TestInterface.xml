@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper SYSTEM
+        "/Users/daxingcao/Desktop/project/spring-study/spring-study-master/src/main/java/test/jdbc/mybatis/factory/xml/mapper-1.0.dtd">
+<mapper nameScope="test.jdbc.mybatis.test.TestInterface">
+    <select id="queryUser" resultType="test.entry.User">
+        select * from user where name = 'zhangsan'
+    </select>
+
+    <update id="updateUser">
+        update user set address = '上海市青浦区' where name = 'zhangsan'
+    </update>
+</mapper>
