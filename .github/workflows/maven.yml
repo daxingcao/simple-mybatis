@@ -19,4 +19,4 @@ jobs:
     - name: Build with Maven
       env: 
         PACKAGE_TOKEN: ${{secrets.PACKAGE_TOKEN}}
-      run: mvn deploy -Dregistry=https://maven.pkg.github.com/daxingcao -Dtoken=${{secrets.PACKAGE_TOKEN}}
+      run: mvn deploy -Dregistry=https://maven.pkg.github.com/daxingcao -Dtoken=$GH_TOKEN
