@@ -17,5 +17,6 @@ jobs:
       with:
         java-version: 1.8
     - name: Build with Maven
-      env: ${{secrets.PACKAGE_TOKEN}}
+      env: 
+        PACKAGE_TOKEN:${{secrets.PACKAGE_TOKEN}}
       run: mvn deploy -Dregistry=https://maven.pkg.github.com/daxingcao -Dtoken=GH_TOKEN
